@@ -272,10 +272,3 @@ Query9
 Query10= pd.read_sql_query('SELECT channel_name,comment_count FROM videos v JOIN channels c on v.channel_id = c.channel_id order by comment_count desc limit 20',con)
 Query10
 
-
-
-a={'id':[1,2,3],'age':[23,45,34]}
-df= pd.DataFrame(a)
-st.dataframe(df)
-
-!streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/master/streamlit_app.py
